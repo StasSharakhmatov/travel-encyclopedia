@@ -1,0 +1,199 @@
+body {
+	background: url(../images/land/ground.jpg);
+	font-family: Gabriola, Verdana, sans-serif;
+	color: maroon;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 0px;
+}
+
+.header{
+	background: url(../images/land/header.jpg); 
+	margin: 10px 10px 0 10px;
+	border-radius: 15px;
+}
+
+.head {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.head div {
+	flex: 1;
+}
+
+.logo {
+	width: 105px;
+	height: 108px;
+	margin: 5px 0px 0px 5px;
+}
+
+.slogan {
+	text-align: right;
+}
+
+.slogan img {
+	width: 450px;
+	height: 150px;
+	padding-right: 5px;
+}
+
+.nav {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.nav a {
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 5px 0 5px;
+	margin-bottom: 5px;
+}
+
+.menu {
+	margin: 0px 10px 0px 10px;
+}
+
+.menu a:link, a:visited {
+	color: #FFD700;
+ 	border-bottom: none;
+ 	font-weight: bold;
+ 	text-decoration: none;
+}
+
+.shoppingСart {
+	flex: 1;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.selected {
+ 	background-color: maroon;
+ 	border-radius: 15px;
+ }
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.content div {
+	margin: 10px 10px 0px 10px;
+	padding: 10px;
+}
+
+.landInterestingFacts {
+	min-width: 220px;
+	flex: 1 1;
+	background: url(../images/land/sideground.jpg);
+	font-size: 21px;
+	text-align: center;
+	border-radius: 20px;
+	border-style: double;
+}
+
+.landMainContent {
+	min-width: 450px;
+	flex: 2 1;
+	font-size: 21px;
+	text-align: center;
+}
+
+.landMainContent a {
+	text-decoration: none;
+	color: maroon;
+}
+
+.landMap {
+	min-width: 220px;
+	flex: 1 1;
+	background: url(../images/land/sideground.jpg);
+	font-size: 21px;
+	text-align: center;
+	border-radius: 20px;
+	border-style: double;
+}
+
+.footer {
+	font-size: 21px;
+	text-align: center;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+}
+
+.point {
+	float: left;
+	padding-top: 2px;
+}
+
+.landImg {
+	border-radius: 10px;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+
+	.slogan img {
+		width: 330px;
+		height: 110px;
+		margin-top: 10px;
+	}
+
+	.menu {
+		margin: 0px 3px 0px 3px;
+	}
+
+	.content {
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	.landMainContent {
+		order: 3;
+	}
+
+	.landInterestingFacts {
+		order: 2;
+	}
+
+	.landMap {
+		order: 1;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.slogan img {
+		width: 180px;
+		height: 80px;
+		margin-top: 10px;
+	}
+
+	.nav {
+		flex-flow: column;
+		text-align: center;
+	}
+
+	.shoppingСart {
+		text-align: center;
+	}
+
+	.content {
+		flex-flow: column;
+	}
+
+	.landMainContent {
+		min-width: 250px;
+		order: 1;
+	}
+
+	.landInterestingFacts {
+		order: 2;
+	}
+
+	.landMap {
+		order: 3;
+	}
+	
+}

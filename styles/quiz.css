@@ -1,0 +1,70 @@
+.shoppingСart {
+	flex: 1;
+	text-align: right;
+	padding-right: 10px;
+}
+
+body {
+	background: url(../images/home/ground.jpg);
+	font-family: Gabriola, Segoe Script, Verdana, sans-serif;
+	color: white;
+}
+
+#choice1, #choice2, #choice3, #choice4 {
+	font-family: URW Chancery L, cursive;
+	display: none;
+	margin-bottom: 10px;
+}
+
+.test {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fff;
+    background: maroon;
+    padding: 4px 8px;
+	border: 0;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+#greeting {
+	font-size: 33px;
+	color: #ADD8E6;
+	font-weight: bold;
+	padding-top: 2px;
+}
+
+#result {
+	font-size: 38px;
+	font-weight: bold;
+	padding-top: 2px;
+}
+
+#question {
+	font-size: 38px;
+	font-weight: bold;
+	padding-top: 2px;
+}
+
+#restart {
+	color: #ADD8E6;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#start {
+	font-family: URW Chancery L, cursive;
+	font-size: 20px;
+}
+
+.choice {
+	text-align: center;
+}
+
+.choice > button {
+	margin-left: auto;
+    margin-right: auto;
+}

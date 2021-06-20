@@ -1,0 +1,75 @@
+.shoppingСart {
+	flex: 1;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.pages {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pages div {
+	flex: 1;
+	margin: 10px 10px 10px 10px;
+}
+
+.notice {
+	color: #ADD8E6;
+	font-size: 25px;
+	text-align: center;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.bar {
+	min-width: 300px;
+	color: #006400;
+	background: url(../images/home/water.jpg);
+	text-align: center;
+	font-size: 1.3em;
+	padding: 15px;
+	border-radius: 15px;
+	opacity: 0.8;
+	transition-duration: 2s;
+}
+
+.bar:hover {
+	opacity: 1;
+	-webkit-transform: scale(1.05);
+  	-ms-transform: scale(1.05);
+  	transform: scale(1.05);
+}
+
+.bar h2 {
+	color: maroon;
+	font-weight: bold;
+}
+
+.price {
+	color: maroon;
+	font-weight: bold;
+}
+
+button {
+	background-color: #077a4a;
+	color: #32fcc0;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: bold;
+	border-radius: 10px;
+	border-color: #068c64;
+	padding: 5px;
+	cursor: pointer;
+}
+
+@media (max-width: 750px) {
+	.bar {
+		min-width: 200px;
+	}
+}
+
+@media (max-width: 500px) {
+	.shoppingСart {
+		text-align: center;
+	}
+}

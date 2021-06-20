@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+ <meta charset="utf-8">
+ <title>Beautiful places</title>
+
+ <link rel="stylesheet" type="text/css" href="styles/quiz.css">
+ <link rel="stylesheet" type="text/css" href="styles/index.css">
+ <link rel="stylesheet" href="animate/animate.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <script src="animate/wow.min.js"></script>
+ <script>
+ 	new WOW().init();
+ </script>
+
+</head>
+
+<body>
+
+	<div class="header wow bounceInDown" data-wow-duration = "2s">
+
+		<div class="head">
+
+			<div class="logo">
+				<a href="index.html">		
+					<img src="images/logo.png" class="logo">
+				</a>
+			</div>
+			
+			<div class="slogan">
+				<img src="images/slogan.png">
+			</div>
+
+		</div>
+
+		<div class="nav">
+			<a href="home.html" class="menu">ГЛАВНАЯ</a>
+			<a href="water.html" class="menu">ВОДА</a>
+			<a href="land.html" class="menu">СУША</a>
+			<a href="space.html" class="menu">КОСМОС</a>
+			<a href="quiz.html" class="menu selected">ВИКТОРИНА</a>
+			<a href="tours.html" class="menu">ЗАКАЗАТЬ ТУР</a>
+
+			<div class="shoppingСart">
+				<a href="cart.html">КОРЗИНА</a>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="wow bounceIn" data-wow-duration = "2s" data-wow-delay = "2s" style="text-align: center">
+
+		<p id="greeting">Вот Вы и добрались до викторины от Beautiful places!<br>Готовы проверить свои новые знания?</p>
+
+		<p id="result"></p>
+
+		<p id="question"></p>
+
+		<div class="choice">
+			<button onclick="quiz(1)" class="test" id="choice1"></button>
+			<button onclick="quiz(2)" class="test" id="choice2"></button>
+			<button onclick="quiz(3)" class="test" id="choice3"></button>
+			<button onclick="quiz(4)" class="test" id="choice4"></button>
+		</div>
+	</div>
+
+	<div class="wow bounceIn" data-wow-duration = "2s" data-wow-delay = "3s" style="text-align: center;">
+
+		<button id="start" class="test" onclick="quiz(0)">ГОТОВ</button><br>
+
+		<script type="text/javascript"> 
+			let curentUrl = document.URL; 
+			document.write("<a id='restart' style='display: none;' class='test' href='" + curentUrl + "'>НАЧАТЬ СНАЧАЛА</a>"); 
+		</script>
+
+	</div>
+
+	<div class="footer wow bounceInUp" data-wow-duration = "2s">
+		&copy 2020 Beautiful places.<br>Все права защищены.
+	</div>
+
+	<script src="scripts/quiz.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+ <meta charset="utf-8">
+ <title>Beautiful places</title>
+
+ <link rel="stylesheet" type="text/css" href="styles/index.css">
+ <link rel="stylesheet" type="text/css" href="styles/cart.css">
+ <link rel="stylesheet" href="animate/animate.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <script src="animate/wow.min.js"></script>
+ <script>
+ 	new WOW().init();
+ </script>
+
+</head>
+
+<body>
+
+	<div class="header wow bounceInDown" data-wow-duration = "2s">
+
+		<div class="head">
+
+			<div class="logo">
+				<a href="index.html">		
+					<img src="images/logo.png" class="logo">
+				</a>
+			</div>
+			
+			<div class="slogan">
+				<img src="images/slogan.png">
+			</div>
+
+		</div>
+
+		<div class="nav">
+			<a href="home.html" class="menu">ГЛАВНАЯ</a>
+			<a href="water.html" class="menu">ВОДА</a>
+			<a href="land.html" class="menu">СУША</a>
+			<a href="space.html" class="menu">КОСМОС</a>
+			<a href="quiz.html" class="menu">ВИКТОРИНА</a>
+			<a href="tours.html" class="menu">ЗАКАЗАТЬ ТУР</a>
+
+			<div class="shoppingСart">
+				<a href="cart.html" class="selected">КОРЗИНА</a>
+			</div>
+		</div>
+		
+	</div>
+
+	<h1 class="wow bounceInUp" data-wow-duration = "2s">Корзина туров</h1>
+
+	<div class="info wow bounceInUp" data-wow-duration = "2s" style="overflow-x: auto"></div>
+
+	<div class="footer wow bounceInUp" data-wow-duration = "2s">
+		&copy 2020 Beautiful places.<br>Все права защищены.
+	</div>
+
+	<script src="class/Cart.js"></script>
+	<script src="scripts/script.js"></script>
+
+</body>
+
+</html>
