@@ -35,7 +35,7 @@ class Cart {
 		return total;
 	}
 	render() {
-		let table = document.createElement("table");		// создаётся таблица (корзина)
+		let table = document.createElement("table");			// создаётся таблица (корзина)
 		table.classList.add(this.cartClass);				// в таблицу добавляется класс с конструктора
 
 		let thead = document.createElement("thead");
@@ -86,13 +86,13 @@ class Cart {
 			td.append(button);
 			tr.append(td);
 
-			td = document.createElement("td");				// создаётся ячейка с названием выбранного тура данного вида
+			td = document.createElement("td");			// создаётся ячейка с названием выбранного тура данного вида
 			let h3 = document.createElement("h3");
 			h3.innerHTML = goods.name;
 			td.append(h3);
 			tr.append(td);
 
-			td = document.createElement("td");				// создаётся ячейка, в которой кнопка "минус один тур" данного вида
+			td = document.createElement("td");			// создаётся ячейка, в которой кнопка "минус один тур" данного вида
 			button = document.createElement("button");
 			button.classList.add(this.minusClass);
 			button.innerHTML = "-";
@@ -100,13 +100,13 @@ class Cart {
 			td.append(button);
 			tr.append(td);
 
-			td = document.createElement("td");				// создаётся подсчёт общего количества товаров одного вида в корзине
+			td = document.createElement("td");			// создаётся подсчёт общего количества товаров одного вида в корзине
 			let p = document.createElement("p");
 			p.innerHTML = goods.count;
 			td.append(p);
 			tr.append(td);
 
-			td = document.createElement("td");				// создаётся ячейка, в которой кнопка "плюс один тур" данного вида
+			td = document.createElement("td");			// создаётся ячейка, в которой кнопка "плюс один тур" данного вида
 			button = document.createElement("button");
 			button.classList.add(this.plusClass);
 			button.innerHTML = "+";
@@ -114,7 +114,7 @@ class Cart {
 			td.append(button);
 			tr.append(td);
 
-			td = document.createElement("td");				// создаётся ячейка, в которой общая сумма товара (товаров) данного вида
+			td = document.createElement("td");			// создаётся ячейка, в которой общая сумма товара (товаров) данного вида
 			p = document.createElement("p");
 			p.innerHTML = goods.count * goods.price + " " + this.currency;
 			td.append(p);
