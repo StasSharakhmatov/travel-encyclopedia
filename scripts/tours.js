@@ -39,14 +39,14 @@ const cart = {
 
 let tours = `<div class="pages wow bounceInUp" data-wow-duration = "2s">`;			// создаём класс в котором отрисовываем массив туров
 tours += `<h1 class="notice">У вас есть уникальная возможность воспользоваться подборкой туров от нашей редакции и отправиться в умопомрачительное путешествие в разные уголки планеты! Солнечная Мадейра, таинственная Иордания, загадочная Танзания, и даже суровая Антарктида, где вы сможете почувствовать себя в роли участника экспедиций!</h1>`;
-for (let key in cart) {																// перебираем массив (обьект)
+for (let key in cart) {										// перебираем массив
 	tours += `<div class="bar">`;
 	tours += `<h2>${cart[key]["name"]}</h2>`;
 	tours += `<img src="${cart[key]["image"]}" class="img">`;
 	tours += `<p>${cart[key]["description"]}</p>`;
 	tours += `<p class="price">${cart[key]["price"]} EUR</p>`
-	tours += `<button class="toCart" data-articul="${key}">ДОБАВИТЬ В КОРЗИНУ</button>`;// добавляем атрибут articul к кнопке, чтобы по ..
-	tours += `</div>`;																// .. нажатию этот товар добавлялся событием в корзину
+	tours += `<button class="toCart" data-articul="${key}">ДОБАВИТЬ В КОРЗИНУ</button>`;	// добавляем атрибут articul к кнопке
+	tours += `</div>`;									
 }
 tours += `</div>`;
 document.querySelector(".content").innerHTML = tours;
@@ -54,14 +54,14 @@ document.querySelector(".content").innerHTML = tours;
 const data = {};
 
 document.querySelector('.content').addEventListener('click', event => {
-	if (event.target.classList.contains('toCart')) {								// если класс содержит toCart, то..
-		let articul = event.target.dataset['articul'];								// получаем в переменную артикул (товар)
-		if (data[articul] !== undefined) {											// если этот товар уже содержится, то прибавляем 1
+	if (event.target.classList.contains('toCart')) {					
+		let articul = event.target.dataset['articul'];					// получаем в переменную артикул (товар)
+		if (data[articul] !== undefined) {						// если этот товар уже содержится, то прибавляем 1
 			data[articul]['count']++;
 		} else {				
-			data[articul] = cart[articul];												// если нет, то назначаем количество вручную, то есть 1
+			data[articul] = cart[articul];						// если нет, то назначаем количество вручную
 			data[articul]['count'] = 1;
 		}
-		localStorage.setItem('cart', JSON.stringify(data));							// сохранение корзины в localStorage
+		localStorage.setItem('cart', JSON.stringify(data));				// сохранение корзины в localStorage
 	}
 })
