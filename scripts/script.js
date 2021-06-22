@@ -1,5 +1,5 @@
 if (localStorage.getItem("cart")) {								// проверка на наличие корзины в localStorage
-	const cart = JSON.parse(localStorage.getItem("cart"));		// получение cart из localStorage
+	const cart = JSON.parse(localStorage.getItem("cart"));					// получение cart из localStorage
 	let shop = new Cart(cart);
 	document.querySelector('.info').innerHTML = '';
 	document.querySelector(".info").append(shop.render());
