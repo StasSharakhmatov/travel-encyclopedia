@@ -59,6 +59,7 @@ p {
 }
 
 .nav a {
+	color: #66CDAA;
 	text-decoration: none;
 	font-weight: bold;
 	padding: 5px 5px 0 5px;
