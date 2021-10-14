@@ -1,3 +1,14 @@
+.form {
+	margin-left: 70px;
+	font-size: 25px;
+}
+
+input[type=text] {
+	width: 40%;
+	padding: 10px;
+	border: 1px solid blue;
+}
+
 .shoppingСart {
 	flex: 1;
 	text-align: right;
