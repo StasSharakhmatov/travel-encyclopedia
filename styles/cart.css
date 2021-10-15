@@ -1,12 +1,37 @@
-.form {
+#adress {
+	padding: 30px;
+}
+
+form {
+	background: url(../images/quiz/header.jpg);
 	margin-left: 70px;
 	font-size: 25px;
+	width: 50%;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+.form {
+	padding: 5px;
+	margin: 0px;
 }
 
 input[type=text] {
-	width: 40%;
+	background: url(../images/quiz/cart.jpg);
+	width: 80%;
 	padding: 10px;
-	border: 1px solid blue;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #66CDAA;
+}
+
+.form h3 {
+	color: #66CDAA;
+	font-size: 25px;
+	font-weight: bold;
 }
 
 .shoppingСart {
